@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streetzy - Fresh Vegetables Direct from Farms</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4CAF50',
+                        'primary-dark': '#388E3C',
+                        secondary: '#FFC107',
+                        light: '#F5F5F5',
+                        dark: '#212121',
+                        gray: '#757575',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light text-dark">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex justify-between items-center py-4">
+                <div class="flex items-center text-primary text-2xl font-bold">
+                    <i class="fas fa-leaf mr-2"></i>
+                    <span>Streetzy</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="#home" class="font-medium hover:text-primary transition">Home</a></li>
+                    <li><a href="#problem" class="font-medium hover:text-primary transition">Problem</a></li>
+                    <li><a href="#solution" class="font-medium hover:text-primary transition">Solution</a></li>
+                    <li><a href="#model" class="font-medium hover:text-primary transition">Model</a></li>
+                    <li><a href="#impact" class="font-medium hover:text-primary transition">Impact</a></li>
+                    <li><a href="#team" class="font-medium hover:text-primary transition">Team</a></li>
+                </ul>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <ul class="space-y-3">
+                    <li><a href="#home" class="block py-2 font-medium hover:text-primary transition">Home</a></li>
+                    <li><a href="#problem" class="block py-2 font-medium hover:text-primary transition">Problem</a></li>
+                    <li><a href="#solution" class="block py-2 font-medium hover:text-primary transition">Solution</a></li>
+                    <li><a href="#model" class="block py-2 font-medium hover:text-primary transition">Model</a></li>
+                    <li><a href="#impact" class="block py-2 font-medium hover:text-primary transition">Impact</a></li>
+                    <li><a href="#team" class="block py-2 font-medium hover:text-primary transition">Team</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-[url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center bg-no-repeat bg-blend-multiply bg-black/60 text-white py-24 md:py-32">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Fresh, Affordable Vegetables Direct from Farms</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8">A rural franchise model delivering nutrition at 25-30% lower prices through innovative farming techniques.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#solution" class="bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-8 rounded-full transition duration-300 inline-block text-center">Our Solution</a>
+                <a href="#contact" class="border-2 border-white hover:bg-white hover:text-dark text-white font-semibold py-3 px-8 rounded-full transition duration-300 inline-block text-center">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">The Problem We're Solving</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-lg text-gray-700">67% of Indian farmers own only 2.5 acres, making vegetable cultivation too risky, forcing villagers to rely on mobile vegetable sellers at higher prices.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-light p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Nutrition Gap</h3>
+                    <p class="text-gray-700">45-64% of rural Indians can't afford a nutritionally recommended diet due to high vegetable prices.</p>
+                </div>
+                
+                <div class="bg-light p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">High Costs</h3>
+                    <p class="text-gray-700">Families pay ₹5000 extra annually due to intermediaries, while average farmer monthly income is just ₹6426.</p>
+                </div>
+                
+                <div class="bg-light p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-tractor"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Farmer Challenges</h3>
+                    <p class="text-gray-700">Small land holdings make vegetable cultivation risky, creating dependency on middlemen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Our Innovative Solution</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Veggie Hubs Franchise Model</h3>
+                    <p class="text-gray-700 mb-6">We partner with local polyhouse farmers to grow and distribute diverse vegetables under our FOFO (Franchise-Owned Franchise-Operated) business model.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-primary text-xl mt-1 mr-4">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">25-30% Lower Prices</h4>
+                                <p class="text-gray-700">By eliminating middlemen and selling directly to villagers</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-primary text-xl mt-1 mr-4">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Advanced Farming Techniques</h4>
+                                <p class="text-gray-700">Polyculture, multi-layer farming, and succession planting for year-round supply</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-primary text-xl mt-1 mr-4">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">WhatsApp Pre-ordering</h4>
+                                <p class="text-gray-700">Easy access without long trips to markets</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1589927986089-35812388d1f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Polyhouse farming" class="w-full h-auto rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Model Section -->
+    <section id="model" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Our Business Model</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-lg text-gray-700">Franchise-Owned Franchise-Operated (FOFO) model for scalability with low upfront costs</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-primary text-white p-6 rounded-lg shadow-lg">
+                    <div class="text-4xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Franchise Onboarding</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check mt-1 mr-2"></i>
+                            <span>Agri-expert assigned</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check mt-1 mr-2"></i>
+                            <span>SOPs described</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check mt-1 mr-2"></i>
+                            <span>Seeds & fertilizers dispatched</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-light p-6 rounded-lg shadow-md">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Revenue Streams</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-xs mt-2 mr-2 text-primary"></i>
+                            <span>Upfront fee: ₹2 lakhs (renewed every 3 years)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-xs mt-2 mr-2 text-primary"></i>
+                            <span>5% of revenue + 5% of profits monthly</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-xs mt-2 mr-2 text-primary"></i>
+                            <span>Sale of seeds and inputs</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-light p-6 rounded-lg shadow-md">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Operations</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-xs mt-2 mr-2 text-primary"></i>
+                            <span>300kg/day production capacity</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-xs mt-2 mr-2 text-primary"></i>
+                            <span>Twice daily village deliveries</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-xs mt-2 mr-2 text-primary"></i>
+                            <span>WhatsApp-based ordering system</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bg-primary/10 p-6 md:p-8 rounded-lg border border-primary/20">
+                <h3 class="text-2xl font-bold mb-4 text-primary">We're Looking For</h3>
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                        <div class="bg-primary text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-home text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Polyhouse Owners</h4>
+                            <p class="text-sm text-gray-600">To collaborate with existing infrastructure</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                        <div class="bg-primary text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-user-tie text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Agriculture Experts</h4>
+                            <p class="text-sm text-gray-600">To guide our franchise partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Our Impact</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+                <div class="order-2 md:order-1">
+                    <h3 class="text-2xl font-bold mb-4">Sustainable Development Goals</h3>
+                    <p class="text-gray-700 mb-6">Streetzy contributes to multiple UN Sustainable Development Goals through our operations:</p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-primary">
+                            <h4 class="font-bold mb-2">Zero Hunger</h4>
+                            <p class="text-sm text-gray-600">Making nutritious food affordable</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-primary">
+                            <h4 class="font-bold mb-2">Good Health</h4>
+                            <p class="text-sm text-gray-600">Reducing malnutrition</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-primary">
+                            <h4 class="font-bold mb-2">Climate Action</h4>
+                            <p class="text-sm text-gray-600">Reducing food miles</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-primary">
+                            <h4 class="font-bold mb-2">Responsible Consumption</h4>
+                            <p class="text-sm text-gray-600">Reducing food waste</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 md:order-2">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sustainable farming" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-primary text-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-6 text-center">Key Benefits</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4 text-secondary">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Affordable Prices</h4>
+                        <p>25-30% lower than market rates</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl mb-4 text-secondary">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Direct Supply</h4>
+                        <p>Farm-to-village with no middlemen</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl mb-4 text-secondary">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Regular Supply</h4>
+                        <p>Year-round availability</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Our Team</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-lg text-gray-700">The Innov8ors team behind Streetzy</p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-light p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center text-primary text-4xl">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Aryan Patil</h3>
+                    <p class="text-gray-600 mb-3">Team Leader</p>
+                    <p class="text-sm text-gray-700">Led internal team discussions and developed the core idea for this project.</p>
+                </div>
+                <div class="bg-light p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center text-primary text-4xl">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Naved Mansoori</h3>
+                    <p class="text-gray-600 mb-3">Research Lead</p>
+                    <p class="text-sm text-gray-700">Gathered credible information and analyzed data.</p>
+                </div>
+                
+                
+                <div class="bg-light p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center text-primary text-4xl">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Piyush Tamoli</h3>
+                    <p class="text-gray-600 mb-3">Execution Lead</p>
+                    <p class="text-sm text-gray-700">Mapped project roadmap and execution strategies.</p>
+                </div>
+                <div class="bg-light p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center text-primary text-4xl">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Kratika Rajput</h3>
+                    <p class="text-gray-600 mb-3">Design Lead</p>
+                    <p class="text-sm text-gray-700">Created the presentation report and designed the slides.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-primary text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-lg">Interested in our franchise model or want to collaborate? Reach out to us!</p>
+            </div>
+            
+            <div class="max-w-2xl mx-auto bg-white text-dark rounded-lg shadow-lg p-8">
+                <form>
+                    <div class="grid sm:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block mb-2 font-medium">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 font-medium">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="subject" class="block mb-2 font-medium">Subject</label>
+                        <input type="text" id="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block mb-2 font-medium">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                    </div>
+                    <button type="submit" class="bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-8 rounded-full transition duration-300 w-full sm:w-auto">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center text-primary text-2xl font-bold mb-4">
+                        <i class="fas fa-leaf mr-2"></i>
+                        <span>Streetzy</span>
+                    </div>
+                    <p class="text-gray-400">A rural franchise model delivering fresh, affordable vegetables directly from farms.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#problem" class="text-gray-400 hover:text-white transition">Problem</a></li>
+                        <li><a href="#solution" class="text-gray-400 hover:text-white transition">Solution</a></li>
+                        <li><a href="#model" class="text-gray-400 hover:text-white transition">Business Model</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#impact" class="text-gray-400 hover:text-white transition">Impact</a></li>
+                        <li><a href="#team" class="text-gray-400 hover:text-white transition">Team</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Streetzy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
